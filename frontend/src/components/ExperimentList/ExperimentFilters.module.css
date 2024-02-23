@@ -1,0 +1,43 @@
+.form {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+}
+
+.formGroup {
+  margin-bottom: var(--spacer);
+}
+
+.formDate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dateWrapper {
+  width: 150px; /* or whatever value suits your layout */
+  margin-right: var(--spacer-x);
+}
+
+.dateWrapper:last-child {
+  margin-right: 0;
+}
+
+.btnPrimary {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border: none;
+  margin: var(--spacer);
+  padding: var(--btn-padding-y);
+  border-radius: var(--btn-border-radius);
+  background-color: var(--info-color);
+  color: var(--light-color);
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnPrimary:hover {
+  box-shadow: none;
+}

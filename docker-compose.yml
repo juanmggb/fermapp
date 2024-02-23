@@ -1,0 +1,49 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: ./backend
+    ports:
+      - 8000:8000
+    command: [ "sh", "./start.sh" ] # Este comando se ejecuta en el directoria raiz del contenedor
+    volumes:
+      - ./backend:/app # During development only
+      - static:/tmp/static
+      - media:/tmp/media
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - postgres_db
+
+  react_app:
+    build:
+      context: ./frontend
+
+    volumes:
+      - react_build:/react/dist
+
+  nginx:
+    build:
+      context: ./nginx
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf # During development only
+      - static:/tmp/static
+      - media:/tmp/media
+      - react_build:/var/www/react
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+      - react_app
+
+  postgres_db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    env_file:
+      - ./.env
+volumes:
+  postgres_data:
+  static:
+  media:
+  react_build:

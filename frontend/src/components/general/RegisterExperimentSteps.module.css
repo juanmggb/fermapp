@@ -1,0 +1,7 @@
+.selected {
+  border-radius: 10px;
+
+  background-color: rgb(222, 229, 231);
+
+  padding: 0.5rem;
+}

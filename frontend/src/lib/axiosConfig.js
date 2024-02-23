@@ -9,7 +9,6 @@ const instance = axios.create({
 // Function to retrieve token
 const getAuthToken = () => {
   const token = JSON.parse(localStorage.getItem("token"));
-  console.log("TOKEN", token);
   return token;
 };
 

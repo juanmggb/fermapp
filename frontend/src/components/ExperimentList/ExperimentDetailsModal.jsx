@@ -40,7 +40,6 @@ function ExperimentDetailsModal({ experiment, show, handleClose }) {
     XLSX.writeFile(wb, `Experiment_${id}_Data.xlsx`);
   };
 
-  console.log(experiment.variables);
 
   return (
     <Modal show={show} onHide={handleClose}>

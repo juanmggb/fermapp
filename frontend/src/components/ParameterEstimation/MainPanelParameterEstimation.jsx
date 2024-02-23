@@ -44,9 +44,9 @@ function MainPanelParameterEstimation({ kineticData }) {
 
   const layout = simulatedData
     ? {
-        ...LAYOUT,
-        title: `Experimental Data and Simulation with Optimal Parameters using ${model_type} Model`,
-      }
+      ...LAYOUT,
+      title: `Experimental Data and Simulation with Optimal Parameters using ${model_type} Model`,
+    }
     : LAYOUT;
 
   return <Plot data={data} layout={layout} />;
@@ -86,8 +86,6 @@ const getPlotExperimentalData = (data) => {
 };
 
 const getCombinedPlotData = (kineticData, simulatedData) => {
-  console.log("kineticData", kineticData);
-  console.log(" simulatedData", simulatedData);
   const kineticPlotData = [
     {
       x: kineticData.t,

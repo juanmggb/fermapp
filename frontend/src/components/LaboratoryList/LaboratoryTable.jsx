@@ -44,7 +44,6 @@ const LaboratoryTable = ({ laboratories }) => {
     );
   };
 
-  console.log(laboratories);
 
   return (
     <>

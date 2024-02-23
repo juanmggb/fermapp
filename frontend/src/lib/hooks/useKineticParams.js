@@ -17,7 +17,6 @@ export const useKineticParamsSimulation = () => {
   });
 
   const handleMuChange = (newValue) => {
-    console.log(newValue, newValue === 1.39);
     setKineticParams((prevKineticParams) => ({
       ...prevKineticParams,
       muValue: newValue,

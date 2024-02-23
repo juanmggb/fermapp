@@ -16,7 +16,6 @@ const LaboratoryList = () => {
   const location = useLocation();
   const search = location.search;
 
-  console.log(search);
 
   const laboratoryList = useSelector((state) => state.laboratoryList);
 

@@ -107,7 +107,6 @@ const LaboratoryDetails = () => {
   ]);
 
   const onSubmit = (data) => {
-    console.log(data);
     dispatch(putLaboratory(data, laboratoryId));
   };
 

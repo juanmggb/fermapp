@@ -108,7 +108,6 @@ const MicroorganismDetails = () => {
   ]);
 
   const onSubmit = (data) => {
-    console.log(data, microorganismId);
 
     dispatch(updateMicroorganism(data, microorganismId));
   };

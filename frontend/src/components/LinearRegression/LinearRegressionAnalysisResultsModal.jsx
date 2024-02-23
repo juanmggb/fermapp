@@ -34,7 +34,6 @@ function LinearRegressionAnalysisResultsModal({
   const { model_params, model_metrics, data_split, features, preprocessing } =
     linearRegression;
 
-  console.log(model_params, model_metrics, data_split, features, preprocessing);
 
   return (
     <Modal show={show} onHide={handleClose}>

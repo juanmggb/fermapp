@@ -41,7 +41,6 @@ const ExperimentTable = ({ experiments }) => {
     );
   };
 
-  console.log(experiments);
   return (
     <div className={style.tableContainer}>
       <Table striped bordered hover>

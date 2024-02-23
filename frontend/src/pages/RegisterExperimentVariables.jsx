@@ -85,7 +85,6 @@ const RegisterExperimentVariables = () => {
       variables,
     };
 
-    console.log(experiment);
     dispatch(postExperiment(experiment));
   };
 

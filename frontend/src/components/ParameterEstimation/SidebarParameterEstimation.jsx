@@ -68,7 +68,6 @@ function SidebarOptimization({ kineticData, setKineticData }) {
       }
 
       const model = kineticData_.model;
-      console.log("model", model);
 
       if (model === "monod") {
         delete kineticData_.Ki;
@@ -94,8 +93,6 @@ function SidebarOptimization({ kineticData, setKineticData }) {
 
   // Get the model value from the form
   const model = watch("model");
-
-  console.log("model", model);
 
   return (
     <>

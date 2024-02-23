@@ -94,7 +94,6 @@ const RegisterLaboratory = () => {
   ]);
 
   const onSubmit = (data) => {
-    console.log(data);
 
     dispatch(
       postLaboratory({
@@ -108,7 +107,6 @@ const RegisterLaboratory = () => {
     );
   };
 
-  console.log(users);
 
   if (loading) return <Loader />;
 

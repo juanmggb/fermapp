@@ -76,12 +76,6 @@ const RegisterExperimentDetails = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(authorId, users);
-
-    console.log(
-      "FIRST NAME",
-      getDisplayNameById(authorId, users, "first_name")
-    );
 
     localStorage.setItem(
       "experimentDetails",
@@ -105,7 +99,6 @@ const RegisterExperimentDetails = () => {
     navigate("/register-exp-variables");
   };
 
-  console.log(users);
 
   if (laboratories && users && microorganisms && products && substrates)
     return (

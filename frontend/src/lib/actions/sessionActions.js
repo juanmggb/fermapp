@@ -13,7 +13,6 @@ export const login = (credentials) => async (dispatch) => {
 
     dispatch({ type: LOGIN_SUCCESS, payload: data.access });
 
-    console.log(data);
 
     localStorage.setItem("token", JSON.stringify(data.access));
     localStorage.setItem("name", JSON.stringify(data.name));

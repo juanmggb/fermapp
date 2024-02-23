@@ -16,7 +16,6 @@ const ExperimentList = () => {
   const location = useLocation();
   const search = location.search;
 
-  console.log(search);
 
   const experimentList = useSelector((state) => state.experimentList);
 

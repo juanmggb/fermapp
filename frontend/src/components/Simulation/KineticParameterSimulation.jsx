@@ -21,9 +21,6 @@ const KineticParameterSimulation = ({
 }) => {
   const { register } = useContext(SimulationFormContext);
 
-  // console.log(symbol, value);
-
-  // console.log(typeof value);
   return (
     <Form.Group controlId={symbol}>
       <Form.Label>

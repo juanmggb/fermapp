@@ -26,7 +26,6 @@ const ExperimentFilters = () => {
     navigate(url);
   };
 
-  console.log("sortBy",sortBy);
 
   return (
     <Form onSubmit={handleFilterExperiments}>

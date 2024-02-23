@@ -67,7 +67,6 @@ const SidebarSimulation = () => {
 
   // Submit simulation input to perform the simulation
   const onSubmit = (data) => {
-    console.log(data);
     if (data.model === "monod") {
       delete data.Ki;
     }

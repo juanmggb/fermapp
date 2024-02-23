@@ -57,7 +57,6 @@ const Account = () => {
     }
   }, [account, dispatch, setValue]);
 
-  console.log(account);
 
   // Validate username
   useEffect(() => {
@@ -138,7 +137,6 @@ const Account = () => {
 
     // Print formData data
     for (const entry of formData.entries()) {
-      console.log(entry[0], entry[1]);
     }
 
     dispatch(updateAccount(formData));
